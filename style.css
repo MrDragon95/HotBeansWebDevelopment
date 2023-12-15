@@ -220,7 +220,7 @@ h3 {
 }
 
 .layer:hover {
-    background: rgba(247,96,0,0.7)
+    background: rgba(247,96,0,0.5)
 }
 
 .layer h3 {
@@ -233,12 +233,23 @@ h3 {
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 
 .layer:hover h3 {
-    bottom 49%;
+    bottom: 59%;
     opacity: 1;
+}
+
+.doCollumn p {
+    visibility: hidden;
+    text-align: left;
+    padding-left: 5%;
+    color: #000000;
+}
+
+.doCollumn:hover p {
+    visibility: visible
 }
 
 .whatWeOffer {

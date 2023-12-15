@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
         
         <script async language="javascript" src="scripts.js"></script>
+        <script async language="javascript" src="jquery-3.4.1.js"></script>
         
     </head>
     
@@ -89,16 +90,16 @@
             
                 <h3>Contact Us</h3>
                 
-                <form class="contactForm">
+                <form class="contactForm" id="contactForm">
                 
-                    <input type="text" placeholder="Enter Name">
-                    <input type="email" placeholder="Enter Email">
+                    <input name="name" id="name" type="text" placeholder="Enter Name">
+                    <input name="email" id="email" type="email" placeholder="Enter Email">
                     
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-                    
-                    <button type="submit" class="button">SUBMIT</button>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
                     
                 </form>
+                
+                <button class="button" onclick="contactFunction()">SUBMIT</button>
                 
             </div>
             
