@@ -459,6 +459,13 @@ h3 {
     margin-right: 30px;
 }
 
+.applyCollumn div .fa-regular {
+    font-size: 28px;
+    color: #F76000;
+    margin: 10px;
+    margin-right: 30px;
+}
+
 .applyCollumn div p {
     padding: 0; 
 }
