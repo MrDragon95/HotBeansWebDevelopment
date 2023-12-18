@@ -196,67 +196,81 @@ h3 {
     padding-top: 50px;
 }
 
-.doCollumn {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+@media(max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    box-sizing: border-box;
+    flex-basis: 31%;
     position: relative;
-    overflow: hidden;
+    max-width: 100%;
+    height: 0px;  
+    background-color: #fff;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
-.doCollumn img {
-    width: 100%;
-    display: block;
+.container .card:hover {
+  height: 630px;    
 }
 
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+
+.card img {
+  position : relative;
+  width : 100%;
+    height: auto;
+  border-radius: 10px;
+  top : -40%;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
 }
 
-.layer:hover {
-    background: rgba(247,96,0,0.5)
+.container .card img {
+  max-width : 100%;
+  border-radius : 15px;
 }
 
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
+.container .card .content {
+  position : relative;
+  top : -130px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
 }
 
-.layer:hover h3 {
-    bottom: 59%;
-    opacity: 1;
+.container .card:hover .content {
+   margin-top : 15px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
 }
 
-.doCollumn p {
-    visibility: hidden;
-    text-align: left;
-    padding-left: 5%;
-    color: #000000;
-}
-
-.doCollumn:hover p {
-    visibility: visible
+@media (max-width: 700px) {
+    .container .card .content {
+        top: -30px;
+    }
 }
 
 .whatWeOffer {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 17%;
 }
 
 .offerCollumn {
@@ -316,7 +330,8 @@ h3 {
     font-weight: 600;
 }
 
-.icons .fa {
+.icons a {
+    text-decoration: none;
     color: #F76000;
     margin: 0 13px;
     cursor: pointer;
@@ -392,8 +407,23 @@ form {
     background: #f0f0f0;
 }
 
-.contactForm button {
-    margin: 10px 0;
+.formButton {
+    display: inline-block;
+    text-decoration: none;
+    color: #F76000;
+    border: 1px solid #F76000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formButton:hover {
+    border: 1px solid #333333;
+    background: #333333;
+    transition: 1s;
 }
 
 .specification {
@@ -500,4 +530,43 @@ form {
     outline: none;
     border: 1px solid #333333;
     box-sizing: border-box;
+}
+
+.meetTheTeam {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 0;
+}
+
+.mtt {
+    padding-top: 5%;
+}
+
+.theTeam {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.teamCollumn {
+    flex-basis: 23%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.teamCollumn img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.teamCollumn p {
+    padding: 0;
+}
+
+.teamCollumn h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
 }
