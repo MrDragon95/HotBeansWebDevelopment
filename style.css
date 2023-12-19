@@ -98,7 +98,13 @@ nav .fa {
     display: none;
 }
 
-@media(max-width: 700px) {
+@media (max-height: 600px) {
+    .body h1 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 900px) {
     
     .body h1 {
         font-size: 20px;
@@ -183,7 +189,7 @@ h3 {
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .row {
         flex-direction: column;
     }
@@ -196,7 +202,7 @@ h3 {
     padding-top: 50px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .container {
         flex-direction: column;
     }
@@ -215,15 +221,14 @@ h3 {
     max-width: 100%;
     height: 0px;  
     background-color: #fff;
-    margin-bottom: 5%;
     padding: 20px 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
 .container .card:hover {
-  height: 630px;    
+  height: auto;    
 }
 
 
@@ -232,7 +237,6 @@ h3 {
   width : 100%;
     height: auto;
   border-radius: 10px;
-  top : -40%;
   box-shadow : 0 5px 20px rgba(0,0,0,0.2);
   z-index : 1;
 }
@@ -244,13 +248,12 @@ h3 {
 
 .container .card .content {
   position : relative;
-  top : -130px;
   padding : 10px 15px;
   color : #111;
   text-align : center;
   visibility : hidden;
   opacity : 0;
-  transition : 0.3s ease-in-out;
+  transition : 0.3s;
 }
 
 .container .card:hover .content {
@@ -260,7 +263,7 @@ h3 {
    transition-delay: 0.2s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .container .card .content {
         top: -30px;
     }
@@ -270,7 +273,7 @@ h3 {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 17%;
+    padding-top: 15%;
 }
 
 .offerCollumn {
@@ -298,12 +301,8 @@ h3 {
 .contact {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7) rgba(0,0,0,0.7)),url("");
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .contact h1 {
@@ -312,7 +311,7 @@ h3 {
     padding: 0;
 }
 
-@media(max-wdith: 700px) {
+@media(max-wdith: 900px) {
     .contact h1 {
         font-size: 24px;
     }
@@ -352,7 +351,7 @@ h3 {
     margin-top: 100px;
 }
 
-@media(max-width:700px) {
+@media(max-width:900px) {
     .sub-header h1 {
         font-size: 24px;
     }
