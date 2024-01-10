@@ -18,7 +18,7 @@ function hideMenu() {
 function contactFunction() {
     "use strict";
     $.ajax({
-        url: "https://api.apispreadsheets.com/data/ZdB3MVK6BzDxqJib/",
+        url: "https://api.apispreadsheets.com/data/ZdB3MVK6BzDxqJiB/",
         type: "post",
         data: $("#contactForm").serializeArray(),
         success: function () {

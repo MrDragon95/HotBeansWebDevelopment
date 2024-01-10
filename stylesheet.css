@@ -210,6 +210,10 @@ nav .fa {
     transition: 0.5s;
 }
 
+.collumn p {
+	text-align: left;
+}
+
 .three {
     flex-basis: 31%;
 }
@@ -233,6 +237,7 @@ nav .fa {
     background: #CCCCCC;
     max-height: 275px;
     opacity: 0.7;
+	transition: 1.5s;
 }
 
 .h img {
@@ -242,11 +247,12 @@ nav .fa {
 
 .h p {
     opacity: 0;
+	transition: 1.25s;
 }
 
 .h:hover p {
     opacity: 1;
-    transition: 1.5s;
+    transition: 2.25s;
 } 
 
 .h:hover {
