@@ -15,7 +15,7 @@ function hideMenu() {
     menu.style.right = "-200px";
 }
 
-function ValidateForm(frm) {
+function validateapply(frm) {
     "use strict";
     if (frm.First_Name.value === "") {
         alert('First name is required.');
@@ -48,4 +48,19 @@ function ValidateForm(frm) {
         return false;
     }
     return true;
+}
+
+function validatecontact(frm) {
+	"use strict";
+	if (frm.email.value.indexOf("@") < 1 || frm.email.value.indexOf(".") < 1) {
+        alert('Please enter a valid email address.');
+        frm.email.focus();
+        return false;
+    }
+	if (frm.message.value === "") {
+		alert("Message Is Required")
+		frm.message.focus();
+		return false;
+	}
+	return true
 }

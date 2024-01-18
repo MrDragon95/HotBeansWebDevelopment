@@ -333,7 +333,7 @@ nav .fa {
     width: 100%;
 }
 
-.bf, {
+.bf {
     width: 80%;
 }
 
@@ -371,6 +371,12 @@ form {
     background: #FFFFFF;
     resize: vertical;
     display: inline;
+}
+
+.af input[type=radio] {
+	width: auto;
+	margin-left: 20px;
+	align-content: center;
 }
 
 .frm input[type=submit] {
